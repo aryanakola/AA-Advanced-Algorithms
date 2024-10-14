@@ -11,9 +11,11 @@ int main()
 {
     int n,k=100;
     cin>>n;
-    
-    bool a = RandomizedPrimalityTesting(n,k);
-    cout<<n<<" is a prime = "<<a;
+    if(n!=1){
+        bool a = RandomizedPrimalityTesting(n,k);
+        cout<<n<<" is a prime = "<<a;
+    }else
+        cout<<1<<" is not prime neither composite";
     return 0;
 }
 
